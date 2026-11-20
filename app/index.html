@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Guide — GTA VI (PS5)</title>
+<meta name="description" content="An offline guide and tracker for all 55 PlayStation 5 trophies of Grand Theft Auto VI: official names, descriptions and grades, a checklist that saves in your browser, filters, a spoiler setting, a roadmap to the platinum, missable flags, and a sourced guide for every trophy.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Grand Theft Auto VI &middot; PlayStation 5 &middot; Unofficial fan guide</p>
+    <h1>Leonida Trophy Guide</h1>
+    <p class="lede">All 55 trophies — 1 platinum, 2 gold, 6 silver, 46 bronze — with a guide for each one, a checklist that saves in your browser, and a roadmap to the platinum. Works fully offline: nothing is fetched from the network.</p>
+    <div class="progress-wrap" aria-live="polite">
+      <div class="progress-line"><span id="progress-text">0 of 55 earned</span><span id="progress-pct">0%</span></div>
+      <div class="progress-bar"><div id="progress-fill" style="width:0%"></div></div>
+      <div class="grade-counts" id="grade-counts"></div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="roadmap" aria-labelledby="roadmap-heading">
+    <h2 id="roadmap-heading">Roadmap to the platinum</h2>
+    <p class="section-note">PowerPyx rates the set 4/10 at about 200 hours (Push Square says up to 300 hours or more). One playthrough is enough: all 55 trophies are offline and single-player, there are no difficulty settings, and free-roam continues after the story. Cheats disable trophies and saving, so leave them off. Only one trophy is possibly missable — <strong>Positive Mental Attitude</strong> — see its flag below.</p>
+    <div class="stages" id="stages"></div>
+  </section>
+
+  <section aria-labelledby="list-heading">
+    <h2 id="list-heading">The trophy checklist</h2>
+    <div class="toolbar">
+      <label class="tool">Search <input id="search" type="search" placeholder="Name, description or guide…" autocomplete="off"></label>
+      <label class="tool">Kind
+        <select id="kind">
+          <option value="all">All kinds</option>
+          <option value="story">Story</option>
+          <option value="stranger">Stranger &amp; character</option>
+          <option value="activity">Activity</option>
+          <option value="collectible">Collectible</option>
+          <option value="robbery">Robbery</option>
+          <option value="combat">Combat</option>
+          <option value="exploration">Exploration</option>
+          <option value="money">Money</option>
+          <option value="other">Other</option>
+        </select>
+      </label>
+      <label class="tool">Grade
+        <select id="grade">
+          <option value="all">All grades</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+      <label class="check"><input id="missable-only" type="checkbox"> Missable only</label>
+      <label class="check"><input id="earned-only" type="checkbox"> Earned only</label>
+      <label class="check spoiler"><input id="spoiler" type="checkbox" checked> Hide spoilers — story trophies stay hidden until earned</label>
+    </div>
+    <div class="toolbar actions">
+      <button id="expand-all" type="button">Expand all guides</button>
+      <button id="collapse-all" type="button">Collapse all guides</button>
+      <button id="export" type="button">Export progress</button>
+      <label class="import-btn">Import progress <input id="import" type="file" accept="application/json,.json"></label>
+      <button id="reset" type="button">Reset progress</button>
+      <span id="result-count" class="result-count" aria-live="polite"></span>
+    </div>
+    <div class="cards" id="cards"></div>
+    <p id="empty" class="empty" hidden>No trophies match these filters.</p>
+  </section>
+</main>
+
+<footer>
+  <h2>Sources</h2>
+  <p>Every guide on this page is written in my own words for this entry. Where a fact comes from another guide it is cited beside that trophy — a source is cited, never copied. Trophy names and descriptions are shown as PlayStation publishes them.</p>
+  <ul id="source-list"></ul>
+  <p class="disclaimer">Unofficial fan guide. Grand Theft Auto, GTA and GTA VI are trademarks of Rockstar Games / Take-Two Interactive. No Rockstar logo, official artwork, box art or game screenshot is used anywhere in this guide. Trophy data checked 20 November 2026; a few late-game methods were still being confirmed by the cited guides when this was written, and those entries say so.</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
